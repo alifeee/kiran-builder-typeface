@@ -31,7 +31,13 @@ for image in $(find . -wholename "./reference/quantized_inverted_bmp/*"); do pot
 one
 ```
 
-## Generate font
+## FontForge
+
+### Import SVGs
+
+See <https://fontforge.org/docs/tutorial/importexample.html>, but click on a letter, `Ctrl+Shift+I`. Then, open it, scale it (`Ctrl+\`), move it, and move the end baseline.
+
+### Generate font
 
 See <https://fontforge.org/docs/tutorial/editexample7.html>, but `Ctrl+Shift+G` in FontForge.
 
