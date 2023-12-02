@@ -15,3 +15,10 @@ for image in $(find . -wholename "./reference/quantized_png/*.png"); do convert 
 ```bash
 for image in $(find . -wholename "./reference/quantized_inverted_png/*.png"); do convert $image ./reference/quantized_inverted_bmp/$(basename ${image%.*}).bmp; done
 ```
+
+### Trace bitmaps with `potrace`
+
+```bash
+for image in $(find . -wholename "./reference/quantized_inverted_bmp/*"); do potrace --svg $image -o "./reference/traced/$(basename ${image%.*}).svg"; d
+one
+```
